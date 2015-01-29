@@ -156,3 +156,21 @@ def find_common_subsequences(seq_1, seq_2, sep='', empty_val=''):
         subseq_current_row = [set([empty_val])] + [set()] * seq_2_len
 
     return subseq_last_row[seq_2_len]
+
+
+def all_common_substr(a,b,lenmin,lenmax):
+    """Find all common substrings between two strings.
+
+    @param a: string2.
+    @param b: string2.
+    @param lenmin: min length.
+    @param lenmax: max length.
+    @return: Set of subsequences in common between seq_1 and seq_2.
+    @rtype: set
+    """
+    anwsers = set()
+    for _len in range(lenmin,lenmax+1):
+        for substr in (a[i:i+_len] for i in range(len(a)-_len+1)):
+            if substr in b:
+                anwsers.add(substr)
+    return anwsers
