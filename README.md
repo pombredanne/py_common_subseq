@@ -15,7 +15,7 @@ pip install py_common_subseq
 
 
 ### Installation (manual / single file)  
-This mico-library is a single file and engineers that may prefer to include the file directly instead of using pip can simply copy py_common_subseq/py_common_subseq.py into an accessible location. This micro-library does not have any additional dependencies beyond the Python standard library.
+This micro-library is a single file and engineers that may prefer to include the file directly instead of using pip can simply copy py_common_subseq/py_common_subseq.py into an accessible location. This micro-library does not have any additional dependencies beyond the Python standard library.
 
 
 ### Quickstart  
